@@ -6,12 +6,12 @@ import Link from "next/link";
 export function Navbar() {
   return (
     
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 pt-10">
     <div className="flex-1">
       <a className="btn btn-ghost text-xl">daisyUI</a>
     </div>
-    <div className="flex-none">
-      <ul className="menu menu-horizontal px-1 text-[17px]">
+    <div className="flex-none ">
+      <ul className="menu menu-horizontal px-1 mt-[-2rem]  text-[17px]">
         <li><a>Home</a></li>
         <li><a>About Us</a></li>
       
