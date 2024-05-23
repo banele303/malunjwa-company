@@ -8,12 +8,13 @@ export function Navbar() {
     
     <div className="navbar bg-base-100 pt-10">
     <div className="flex-1">
-      <a className="btn btn-ghost text-xl">daisyUI</a>
+      <Link href="/" className="btn btn-ghost text-xl"> Malunjwa Company</Link>
     </div>
     <div className="flex-none ">
       <ul className="menu menu-horizontal px-1 mt-[-2rem]  text-[17px]">
-        <li><a>Home</a></li>
-        <li><a>About Us</a></li>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/about-us">About US</Link></li>
+        
       
         <li>
           <details>
@@ -21,13 +22,13 @@ export function Navbar() {
             Services
             </summary>
             <ul className="bg-base-100 z-20 rounded-t-none mx-[-6rem]  text-[15px]">
-              <li><a>Electrical Works</a></li>
-              <li><a>Mechanical Works</a></li>
-              <li><a>General Building</a></li>
-              <li><a>Street Linghts</a></li>
-              <li><a>Civil Works</a></li>
-              <li><a>Plumbing </a></li>
-              <li><a>General Works</a></li>
+            <li><Link href="/about-us">Electrical Works</Link></li>
+            <li><Link href="/about-us">Mechanical Works</Link></li>
+            <li><Link href="/about-us">General Building</Link></li>
+            <li><Link href="/about-us">Street Linghts</Link></li>
+            <li><Link href="/about-us">Civil Works</Link></li>
+            <li><Link href="/about-us">General Works</Link></li>
+             
             </ul>
           </details>
         </li>
@@ -42,7 +43,7 @@ export function Navbar() {
                           href={`tel:`}
                           className="text-center mx-auto"
                         >
-                       Contact
+                       CALL Now
                         </Link>
                         <svg
                           fill="none"
