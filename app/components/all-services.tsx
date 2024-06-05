@@ -6,33 +6,33 @@ const businessList = [
     {
         title: "House Renovation",
         id: 1,
-        Image: "/hero.png",
+        Image: "/about-hero.jpg",
     },
     {
-        title: "Bathroom Remodeling",
+        title: "Electrical",
         id: 2,
-        Image: "/hero.png",
+        Image: "/electrical.jpg",
     },
     {
-        title: "Painting",
+        title: "Plumbing",
         id: 3,
-        Image: "/hero.png",
+        Image: "/plumbing.jpg",
     },
     {
-        title: "Paving",
+        title: "Construction",
         id: 4,
-        Image: "/hero.png",
+        Image: "/construction.jpg",
 
     },
     {
-        title: "Kitchen Remodeling",
+        title: "Civil Works",
         id: 5,
-        Image: "/hero.png",
+        Image: "/elctrical.jpg",
     },
     {
         title: "Roofing",
         id: 6,
-        Image: "/hero.png",
+        Image: "/roof.jpg",
     },
 ];
 
