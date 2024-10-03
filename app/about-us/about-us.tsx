@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import malunjwaImage from "../../public/construction.jpg"
 
-export default function AboutHero() {
+export default function AboutUs() {
   const phoneNumber = '+27 83 300 0705';
 
   return (

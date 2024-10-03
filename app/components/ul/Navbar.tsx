@@ -51,7 +51,7 @@ const components: { title: string; href: string}[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <div className="grid grid-cols-1  py-[2rem] md:grid-cols-3 gap-[10rem] justify-center items-center mx-auto mx-[2rem] md:mx-[4rem]">
+    <div className="grid grid-cols-1  py-[2rem] md:grid-cols-3 gap-[20rem] justify-center items-center mx-auto mx-[2rem] md:mx-[2rem]">
         <div>
             Main Logo
         </div>
@@ -104,7 +104,7 @@ export function NavigationMenuDemo() {
       </NavigationMenuList>
     </NavigationMenu>
         </div>
-       <div className="flex md:flex-end">
+       <div className="flex md:mr-[-5rem] md:flex-end">
        <Link
             href={"/meeting"}
             className="
@@ -114,14 +114,14 @@ export function NavigationMenuDemo() {
   hover:bg-[#abcbff]
   rounded-[6px]
   border-2
-  border-black
+  border-orange
   text-white
-  bg-[#121212]
+  bg-orange-700
   transition
   duration-200
      hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
           >
-            Book a call
+           call Now
           </Link>
        </div>
     

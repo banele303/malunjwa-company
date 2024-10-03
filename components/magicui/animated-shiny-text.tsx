@@ -1,3 +1,5 @@
+"use client"
+
 import { CSSProperties, FC, ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
@@ -14,7 +16,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
   shimmerWidth = 100,
 }) => {
   return (
-    <p
+    <div
       style={
         {
           "--shimmer-width": `${shimmerWidth}px`,
@@ -33,7 +35,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
       )}
     >
       {children}
-    </p>
+    </div>
   );
 };
 

@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import malunjwaImage from "../../public/construction.jpg"
+import motion from 'framer-motion';
 import React from 'react';
 const businessList = [
     {
@@ -37,51 +39,111 @@ const businessList = [
 
 function AllservicesAbout() {
     return (
-        <div className='mt-5 px-[2rem] md:px-[6rem]'>
+        <div className='mt-5 px-[2rem] md:px-[2rem]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
 
-            <div className='py-[3rem] md:pt-[3rem]'>
-                <h3 className='text-[17px] font-bold md:text-[20px] py-3'>WHO WE ARE</h3>
-                <p className='text-[17px] leading-7'> M&C is an established local and sustainable business, operating off its own cash flow. Most of our experiences have been gained through being hired as subcontractor by different contractors to execute a wide array of construction projects and now, we have decided to create direct relationship with clients, to offer them a more personalized service and more efficient costs. We have been working in this concept and we have developed extensive knowledge that could transform our concept into a success story. We believe can provide solutions and value creations to our clients.
-                    Our technical teams are responsible, qualified, fully trained, experienced and inducted at every site. Stringent employment and medical checks are in place for all our technical teams including, supervisors, team leaders and managers. All staff are trained to comply with company policy, Workplace Health and Safety and safe work place methods.
-                    <br />
-                    <br />
-                    In order to improve in value, quality and desirability, M&C collaborates with a number of specialists, such as qualified structural engineers, architects, building surveyors, designers, electricians, plumbers, gas installers and many others to ensure all clients&apos; needs are met. Moreover, we continuously look for new products and enhance our services to serve our customers better.
-                    <br />
-                    <br />
-                    Also, M&C collaborates with a number of specialists, such as qualified structural engineers, architects, building surveyors, designers, electricians, plumbers, gas installers and many others to ensure all clients&apos; needs are met. Moreover, we continuously look for new products and enhance our services to serve our customers better
-                </p>
-                <br />
+                <div className='py-[3rem] md:pt-[3rem] '>
+                    <h3 className='text-[17px] font-bold md:text-[20px] py-3'>WHO WE ARE</h3>
+                    <p className='text-[15px] leading-7'> M&C is an established local and sustainable business, operating off its own cash flow. Most of our experiences have been gained through being hired as subcontractor by different contractors to execute a wide array of construction projects and now, we have decided to create direct relationship with clients, to offer them a more personalized service and more efficient costs. We have been working in this concept and we have developed extensive knowledge that could transform our concept into a success story. We believe can provide solutions and value creations to our clients.
+                        <br />
+                        <br />
+                        Our technical teams are responsible, qualified, fully trained, experienced and inducted at every site. Stringent employment and medical checks are in place for all our technical teams including, supervisors, team leaders and managers. All staff are trained to comply with company policy, Workplace Health and Safety and safe work place methods.
+                        <br />
+                        <br />
 
-                <ul>
-                    <li>To achieve 100% customer satisfaction by delivering quality products and services at an affordable cost. Our forward vision is to strive to become a company-based solution, capable of demanding unconditional response from the targeted niche. We also believe that for our scope of improvisation - sky is the limit and we are always ready to take our achievements to the next level. We are growing and would always like to remain on the growing streak</li>
+                        Also, M&C collaborates with a number of specialists, such as qualified structural engineers, architects, building surveyors, designers, electricians, plumbers, gas installers and many others to ensure all clients&apos; needs are met. Moreover, we continuously look for new products and enhance our services to serve our customers better
+                    </p>
                     <br />
 
-                    <li>To strive and improve a better everyday life for our people, even if it meant stepping away from the comfort zone</li>
+                    <ul>
+                        <li>To achieve 100% customer satisfaction by delivering quality products and services at an affordable cost. Our forward vision is to strive to become a company-based solution, capable of demanding unconditional response from the targeted niche. We also believe that for our scope of improvisation - sky is the limit and we are always ready to take our achievements to the next level. We are growing and would always like to remain on the growing streak</li>
+                        <br />
 
-                    <br />
-                    <li>To achieve controlled growth while maintaining stability</li>
-                    <br />
+                        <li>To strive and improve a better everyday life for our people, even if it meant stepping away from the comfort zone</li>
 
-                    <li>To create a pleasant work environment that can be enjoyed by our employees and clients</li>
+                        <br />
+                        <li>To achieve controlled growth while maintaining stability</li>
+                        <br />
 
-                </ul>
-                <h3 className='text-[17px] font-bold md:text-[20px] py-3 leading-7 pt-[4rem] text-orange-400'>MANAGEMENT TEAM</h3>
-                <p className='text-[17px]'>The company is run by honest and able team with various experience and knowledge gained through educating themselves to identify a gap in the South African market. The directors use their own discretion and innovation to serve a market where there is a demand for M&C services.
-                </p>
-                <h3 className='text-[19px] font-bold md:text-[26px] text-orange-800 py-3 leading-7 mt-[4rem]'>OUR PRINCIPLES</h3>
-                <h3 className='text-[19px] font-bold md:text-[23px]  py-3 leading-7 mt-[1rem]'>Integrity</h3>
-                <p className='text-[17px]'>We aspire to the highest standards of ethical behaviour that demonstrate honesty, fairness and trustworthiness.
-                </p>
-                <h3 className='text-[19px] font-bold md:text-[23px]  py-3 leading-7 mt-[1rem]'>Transparency</h3>
-                <p className='text-[17px]'>All stakeholders can expect that information to which they are entitled is accurate, complete, relevant and timely and presented in such a way as not to mislead. References of completed projects used by our marketing team during market presentations shall in no way seek to misrepresent our capabilities.
-                </p>
-                <h3 className='text-[19px] font-bold md:text-[23px]  py-3 leading-7 mt-[1rem]'>Corporate Citizenship</h3>
-                <p className='text-[17px]'>We embrace cultural diversity, accept our environmental responsibilities and are sensitive to our local communities.
-                </p>
+                        <li>To create a pleasant work environment that can be enjoyed by our employees and clients</li>
+
+                    </ul>
 
 
 
+
+
+
+
+
+                </div>
+
+
+                <div className='pt-[2rem] md:pt-[16rem]'>
+                    <Image src={malunjwaImage} alt="malunjwa Image Here" width={500} height={200} className='h-[150px] md:h-[300px] object-cover rounded-lg' />
+                </div>
             </div>
+
+
+
+
+
+            
+           
+
+            <section style={{ position: 'relative', width: '100%', height: '100%' }}>
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)',
+      backgroundSize: '20px 20px',
+    }}
+  />
+  <Image
+    src="/building1.jpg"
+    alt="Construction site with cranes and workers at sunset"
+    width={1920}
+    height={1080}
+    priority
+    className="object-cover object-center rounded-md"
+    style={{
+      width: '100%',
+      height: '100%',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      filter: 'brightness(20%)', // Darken the image
+    }}
+  />
+  <div style={{ position: 'relative', zIndex: 1, padding: '30px' }}>
+
+    <h1 className="mb-4 text-2xl font-bold text-orange-400  md:text-4xl lg:text-4xl pt-[2rem]">
+      Building Tomorrow, Today
+    </h1>
+    <p className='text-[17px] text-slate-300'>
+      The company is run by an honest and able team with various experiences and knowledge gained through educating themselves to identify a gap in the South African market. The directors use their own discretion and innovation to serve a market where there is a demand for M&C services.
+    </p>
+    <h3 className='text-[19px] font-bold md:text-[26px] text-orange-800 py-3 leading-7 mt-[4rem]'>OUR PRINCIPLES</h3>
+    <h3 className='text-[19px] font-bold md:text-[23px] py-3 leading-7 mt-[1rem] text-orange-800'>Integrity</h3>
+    <p className='text-[17px] text-slate-300'>
+      We aspire to the highest standards of ethical behaviour that demonstrate honesty, fairness, and trustworthiness.
+    </p>
+    <h3 className='text-[19px] font-bold md:text-[23px] py-3 leading-7 mt-[1rem] text-orange-800'>Transparency</h3>
+    <p className='text-[17px] text-slate-300'>
+      All stakeholders can expect that information to which they are entitled is accurate, complete, relevant, and timely and presented in such a way as not to mislead. References of completed projects used by our marketing team during market presentations shall in no way seek to misrepresent our capabilities.
+    </p>
+    <h3 className='text-[19px] font-bold md:text-[23px] py-3 leading-7 mt-[1rem] text-orange-800'>Corporate Citizenship</h3>
+    <p className='text-[17px] text-slate-300 pb-[2rem]'>
+      We embrace cultural diversity, accept our environmental responsibilities, and are sensitive to our local communities.
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
 
 
 
@@ -94,7 +156,7 @@ function AllservicesAbout() {
                         <div className='flex flex-col items-baseline p-3 gap-1'>
                             <h2 className='p-1 bg-purple-200 text-primary rounded-full px-2 text-[12px]'>{business.title}</h2>
                             <h2 className='font-bold text-lg'>{business.title}</h2>
-                            <button className="bg-blue-500 no-underline group w-[9rem] cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block">
+                            <button className="bg-blue-500 no-underline group w-[9rem] cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-slate-300 inline-block">
                                 <span className="absolute inset-0 overflow-hidden rounded-full">
                                     <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                                 </span>
