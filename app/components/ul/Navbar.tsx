@@ -51,7 +51,7 @@ const components: { title: string; href: string}[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <div className="grid grid-cols-1  py-[2rem] md:grid-cols-3 gap-[20rem] justify-center items-center mx-auto mx-[2rem] md:mx-[2rem]">
+    <div className="grid grid-cols-1 bg-white  py-[2rem] md:grid-cols-3 gap-[20rem] justify-center items-center mx-auto mx-[2rem] md:mx-[2rem]">
         <div>
             Main Logo
         </div>
@@ -62,7 +62,7 @@ export function NavigationMenuDemo() {
 
 
       <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
              Home
             </NavigationMenuLink>
@@ -71,7 +71,7 @@ export function NavigationMenuDemo() {
 
 
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/about-us" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
              About Us
             </NavigationMenuLink>
@@ -97,14 +97,14 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/docs" className="bg-blue roundend-6" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              +27 63 199 5124
+             Contact Us
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
         </div>
-       <div className="flex md:mr-[-5rem] md:flex-end">
+       <div className="flex  md:flex-end">
        <Link
             href={"/meeting"}
             className="
@@ -121,7 +121,7 @@ export function NavigationMenuDemo() {
   duration-200
      hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
           >
-           call Now
+        +27 63 199 5124
           </Link>
        </div>
     

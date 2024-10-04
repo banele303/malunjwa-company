@@ -32,7 +32,7 @@ const useInView = () => {
   return isInView
 }
 
-export default function AboutHero() {
+export default function ElectricHero() {
   const isInView = useInView()
 
   const variants = {
@@ -43,7 +43,7 @@ export default function AboutHero() {
   return (
     <section id="hero-section" className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
       <Image
-        src="/geyser-services.jpg"
+        src="/electrical/generator.png"
         alt="Construction site with cranes and workers at sunset"
         width={1920}
         height={1080}
@@ -71,13 +71,13 @@ export default function AboutHero() {
       <div className="relative flex h-full items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-3xl text-center">
           <motion.h1 
-            className="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl"
+            className="mb-4 text-xl font-bold text-white sm:text-3xl md:text-4xl lg:text-4xl"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Building Tomorrow, Today
+            Expert Electrical Services for Your Home and Business
           </motion.h1>
           <motion.p 
             className="mb-8 text-lg text-gray-200 sm:text-xl md:text-2xl"
@@ -86,7 +86,7 @@ export default function AboutHero() {
             variants={variants}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Expert Construction Services with Over 30 Years of Excellence
+           Professional, reliable, and affordable electrical solutions tailored to your needs
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -96,7 +96,7 @@ export default function AboutHero() {
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             <Button size="lg" className="w-full sm:w-auto text-sm md:text-base">
-              View Our Projects
+             CALL +27 63 199 5124
             </Button>
             <Button size="lg" variant="outline" className="w-full sm:w-auto text-sm md:text-base">
               Get a Free Quote

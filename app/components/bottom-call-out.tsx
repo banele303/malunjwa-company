@@ -3,46 +3,31 @@
 // components/OurStory.js
 
 import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
 
-import { useInView } from "react-intersection-observer";
 import { Form } from "./form";
 
 
 export default function BCallOut() {
-    const [ref, inView] = useInView({
-        triggerOnce: false,
-    });
+
 
     return (
         <div>
 
-            <motion.div
-                ref={ref}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: inView ? 1 : 0 }}
+            <div
+
                 className="flex flex-col md:flex-row custom-negative-z-index gap-8 pt-[4rem]   md:py-[5rem] px-[1rem]  dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]"
             >
 
 
                 {/* Right Section */}
-                <motion.div
-                    initial={{ x: -500 }}
-                    animate={{ x: inView ? 0 : -500 }}
-                    transition={{
-                        duration: 2,
-                        delay: 1,
-                        type: "spring",
-                        stiffness: 200,
-                        damping: 20,
-                    }}
+                <div
+
                     className="w-full flex flex-col  md:w-1/2 md:pl-8 px-[.5rem] md:px-[2rem]"
                 >
-                    <motion.h2 className="text-[17px] md:text-[25px] text-start capitalize font-bold mb-7 pt-[4rem]  text-orange-500">
+                    <h2 className="text-[17px] md:text-[25px] text-start capitalize font-bold mb-7 pt-[4rem]  text-orange-500">
                         OUR Mission
-                    </motion.h2>
-                    <motion.p className="text-18 md:text-[17px] text-slate-800 leading-9">
+                    </h2>
+                    <p className="text-18 md:text-[17px] text-slate-800 leading-9">
                         Transforming spaces one dream at a time! Expressions Remodeling is your go-to team for all your home renovation needs. From concept to completion, we bring your vision to life with passion and precision. Let us elevate your space and create a masterpiece that reflects your unique style. Get ready to fall in love with your home all over again! #DreamsWithExpressions
                         <br />
                         <br />
@@ -50,7 +35,7 @@ export default function BCallOut() {
 
 
 
-                    </motion.p>
+                    </p>
 
                     <button className="bg-slate-800 mt-4 no-underline group cursor-pointer  shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
                         <span className="absolute inset-0 overflow-hidden rounded-full">
@@ -76,20 +61,18 @@ export default function BCallOut() {
                                 />
                             </svg>
                         </div>
-                        <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+                       
                     </button>
-                </motion.div>
+                </div>
                 {/* Left Section */}
-                <motion.div
+                <div
                     className="container mx-auto   pt-[5rem] md:w-1/3 rounded-md px-[2rem]"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+
                 >
                     <Form />
-                </motion.div>
+                </div>
 
-            </motion.div>
+            </div>
         </div>
 
     );

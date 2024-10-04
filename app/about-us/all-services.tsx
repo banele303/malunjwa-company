@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import malunjwaImage from "../../public/construction.jpg"
+import malunjwaImage from "../../public/geyser-services.jpg"
 import motion from 'framer-motion';
 import React from 'react';
 const businessList = [
@@ -40,7 +40,7 @@ const businessList = [
 function AllservicesAbout() {
     return (
         <div className='mt-5 px-[2rem] md:px-[2rem]'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-[4rem]'>
 
                 <div className='py-[3rem] md:pt-[3rem] '>
                     <h3 className='text-[17px] font-bold md:text-[20px] py-3'>WHO WE ARE</h3>
@@ -79,8 +79,8 @@ function AllservicesAbout() {
                 </div>
 
 
-                <div className='pt-[2rem] md:pt-[16rem]'>
-                    <Image src={malunjwaImage} alt="malunjwa Image Here" width={500} height={200} className='h-[150px] md:h-[300px] object-cover rounded-lg' />
+                <div className='pt-[2rem] md:pt-[12rem]'>
+                    <Image src={malunjwaImage} alt="malunjwa Image Here" width={500} height={200} className=' object-cover rounded-lg' />
                 </div>
             </div>
 
@@ -115,7 +115,7 @@ function AllservicesAbout() {
       filter: 'brightness(20%)', // Darken the image
     }}
   />
-  <div style={{ position: 'relative', zIndex: 1, padding: '30px' }}>
+  <div style={{ position: 'relative', zIndex: 1, padding: '30px' }} className='flex flex-col justify-center'>
 
     <h1 className="mb-4 text-2xl font-bold text-orange-400  md:text-4xl lg:text-4xl pt-[2rem]">
       Building Tomorrow, Today
