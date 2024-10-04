@@ -19,7 +19,7 @@ import { ButtonDestructive } from "./buttoncn"
 const components: { title: string; href: string}[] = [
   {
     title: "Electrical Works",
-    href: "/docs/primitives/alert-dialog",
+    href: "/electrical-services",
    
   },
   {
