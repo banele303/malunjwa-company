@@ -14,22 +14,38 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-
-
   	extend: {
-		animation: {
-			shimmer: "shimmer 8s infinite",
-		  },
-		  keyframes: {
-			shimmer: {
-			  "0%, 90%, 100%": {
-				"background-position": "calc(-100% - var(--shimmer-width)) 0",
-			  },
-			  "30%, 60%": {
-				"background-position": "calc(100% + var(--shimmer-width)) 0",
-			  },
-			},
-		  },
+  		animation: {
+  			shimmer: 'shimmer 8s infinite',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		},
+  		keyframes: {
+  			shimmer: {
+  				'0%, 90%, 100%': {
+  					'background-position': 'calc(-100% - var(--shimmer-width)) 0'
+  				},
+  				'30%, 60%': {
+  					'background-position': 'calc(100% + var(--shimmer-width)) 0'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
