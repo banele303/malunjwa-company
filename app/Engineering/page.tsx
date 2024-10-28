@@ -19,17 +19,23 @@ export default function EngineeringPage() {
       {/* Hero Section */}
       <section className="relative  text-white">
         <div className="absolute inset-0">
-          <Image
-            src="/about-hero1.jpg"
-            alt="Engineering background"
-            layout="fill"
-            objectFit="cover"
+          <div className="relative w-full h-full">
+            <Image
+              src="/mechanical/pipes.jpg"
+              alt="Engineering background"
+              layout="fill"
+              objectFit="cover"
+              className="brightness-40" // Adjust brightness to a lower value
+              priority
+            />
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            className="brightness-50"
-            priority
-          />
+            {/* Content on top of the image */}
+
+          </div>
         </div>
-        <div className="relative container mx-auto px-4 py-24 sm:py-32">
+        <div className="relative container mx-auto px-4 py-24 sm:py-32  z-10">
           <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">
             Powering the Future with MALUNJWA Engineering
           </h1>
@@ -45,13 +51,13 @@ export default function EngineeringPage() {
       {/* About Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">About MALUNJWA Company</h2>
+          <h2 className="text-3xl font-bold mb-8 py-4 opacity-90"> Engineering Services</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-lg mb-4">
-                MALUNJWA Company is a leading engineering firm specializing in cutting-edge electrical and mechanical solutions. With decades of experience and a team of highly skilled engineers, we tackle complex challenges and deliver innovative results.
+              <p className="text-[17px] mb-4 opacity-90">
+                Malunjwa Company is a leading engineering firm specializing in cutting-edge electrical and mechanical solutions. With decades of experience and a team of highly skilled engineers, we tackle complex challenges and deliver innovative results.
               </p>
-              <p className="text-lg mb-4">
+              <p className="text-[17px] mb-4 opacity-90">
                 Our commitment to excellence, sustainability, and client satisfaction sets us apart in the industry. We leverage the latest technologies and methodologies to ensure that every project we undertake is completed to the highest standards.
               </p>
             </div>
@@ -90,8 +96,8 @@ export default function EngineeringPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Engineering Services</h2>
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="electrical">Electrical Engineering</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 ">
+              <TabsTrigger value="electrical" >Electrical Engineering</TabsTrigger>
               <TabsTrigger value="mechanical">Mechanical Engineering</TabsTrigger>
             </TabsList>
             <TabsContent value="electrical">
@@ -229,8 +235,8 @@ export default function EngineeringPage() {
                 <CardDescription>Revolutionizing manufacturing with IoT and AI</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image src="/plumbing.jpg" alt="HVAC System" width={400} height={200} className="mb-4 rounded-md max-height-[300px]" />
-                <p>Implemented a state-of-the-art automation system, integrating IoT sensors and AI-driven process optimization, resulting in a 30% increase in productivity.</p>
+                <Image src="/mechanical/mechanical2.jfif" alt="HVAC System" width={400} height={200} className="w-full h-auto max-w-[400px] max-h-[200px] rounded-md object-cover" />
+                <p className='py-2'>Implemented a state-of-the-art automation system, integrating IoT sensors and AI-driven process optimization, resulting in a 30% increase in productivity.</p>
               </CardContent>
             </Card>
             <Card>
@@ -239,8 +245,8 @@ export default function EngineeringPage() {
                 <CardDescription>Powering communities with clean energy</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image src="/placeholder.svg" alt="HVAC System" width={400} height={200} className="mb-4" />
-                <p>Designed and implemented a hybrid solar-wind power system for a remote community, providing reliable, sustainable energy and reducing carbon emissions by 5000 tons annually.</p>
+                <Image src="/mechanical/solar.jpg" alt="HVAC System" width={400} height={200} className="w-full h-auto max-w-[400px] max-h-[200px] rounded-md object-cover" />
+                <p className='py-2'>Designed and implemented a hybrid solar-wind power system for a remote community, providing reliable, sustainable energy and reducing carbon emissions by 5000 tons annually.</p>
               </CardContent>
             </Card>
             <Card>
@@ -249,19 +255,36 @@ export default function EngineeringPage() {
                 <CardDescription>Optimizing comfort and efficiency</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image src="/placeholder.svg" alt="HVAC System" width={400} height={200} className="mb-4" />
-                <p>Developed a cutting-edge HVAC system for a large commercial complex, incorporating smart controls and energy recovery ventilation, resulting in 40% energy savings.</p>
+                <Image src="/mechanical/hvac.jpg" alt="HVAC System" width={400} height={200} className="w-full h-auto max-w-[400px] max-h-[200px] rounded-md object-cover" />
+                <p className='py-2'>Developed a cutting-edge HVAC system for a large commercial complex, incorporating smart controls and energy recovery ventilation, resulting in 40% energy savings.</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
+
+
+      {/* Call to Action */}
+      <section className="py-16 bg-yellow-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Engineer Your Success?</h2>
+          <p className="text-xl mb-8">Contact MALUNJWA Company today for innovative electrical and mechanical solutions.</p>
+          <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-100">
+            Get in Touch
+          </Button>
+        </div>
+      </section>
+
+
+
+
+
       {/* FAQ Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
-          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto text-[20px]">
             <AccordionItem value="item-1">
               <AccordionTrigger>What types of industries does MALUNJWA Company serve?</AccordionTrigger>
               <AccordionContent>
@@ -296,16 +319,7 @@ export default function EngineeringPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 bg-blue-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Engineer Your Success?</h2>
-          <p className="text-xl mb-8">Contact MALUNJWA Company today for innovative electrical and mechanical solutions.</p>
-          <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-100">
-            Get in Touch
-          </Button>
-        </div>
-      </section>
+
 
       <Footer />
     </div>

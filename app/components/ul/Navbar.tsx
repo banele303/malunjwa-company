@@ -15,6 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { ButtonDestructive } from "./buttoncn"
+import Image from "next/image"
 
 const components: { title: string; href: string}[] = [
   {
@@ -23,38 +24,40 @@ const components: { title: string; href: string}[] = [
    
   },
   {
-    title: "Mechanical Works",
-    href: "/docs/primitives/hover-card",
+    title: "Engineering",
+    href: "/Engineering",
     
   },
   {
-    title: "General Building",
+    title: "Plumbing",
     href: "/docs/primitives/progress",
    
   },
   {
-    title: "General Works",
+    title: "HVAC",
     href: "/docs/primitives/scroll-area",
 
   },
   {
-    title: "Street Linghts",
+    title: "CCTV CAMERAS & MOre",
     href: "/docs/primitives/tabs",
   
   },
-  {
-    title: "Civil Works",
-    href: "/docs/primitives/tooltip",
-   
-  },
+
 ]
 
 export function NavigationMenuDemo() {
   return (
-    <div className="grid grid-cols-1 bg-white  py-[2rem] md:grid-cols-3 gap-[20rem] justify-center items-center mx-auto mx-[2rem] md:mx-[2rem]">
-        <div>
-            Main Logo
-        </div>
+    <div className="grid grid-cols-1 bg-white   md:grid-cols-3 gap-[20rem] justify-center items-center mx-auto mx-[2rem] md:mx-[2rem]">
+        <div className="relative w-48 h-[8.4rem] ">
+        <Image
+          src="/mechanical/logo.jpg" // Path to your logo
+          alt="Company Logo"
+          layout="fill"
+          objectFit="contain"
+          priority
+        />
+      </div>
         <div>
         <NavigationMenu className="dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] md:pl-[12rem]">
       <NavigationMenuList>
