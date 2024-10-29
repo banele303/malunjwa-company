@@ -8,7 +8,7 @@ export function GoogleReviews() {
     <div className="z-10 flex items-start">
       <div
         className={cn(
-          "group rounded-full text-base text-white transition-all ease-in",
+          "group rounded-full  text-white transition-all ease-in",
         )}
       >
         <AnimatedShinyText className=" 
@@ -27,7 +27,7 @@ export function GoogleReviews() {
             ⭐{" "}   ⭐{" "}   ⭐{" "}   ⭐{" "}   ⭐
             <div className="flex items-center space-x-2 py-2 md:py-0">
               <FcGoogle className="h-6 w-6 " />
-              <span className="text-gray-600 hover:underline cursor-pointer ">
+              <span className="text-white hover:underline cursor-pointer ">
                 4.8 stars 40+ google reviews
               </span>
             </div>

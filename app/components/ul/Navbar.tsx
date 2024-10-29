@@ -30,17 +30,17 @@ const components: { title: string; href: string}[] = [
   },
   {
     title: "Plumbing",
-    href: "/docs/primitives/progress",
+    href: "/plumbing-services",
    
   },
   {
     title: "HVAC",
-    href: "/docs/primitives/scroll-area",
+    href: "/hvac-services",
 
   },
   {
-    title: "CCTV CAMERAS & MOre",
-    href: "/docs/primitives/tabs",
+    title: "CCTV & MORE",
+    href: "/cctv-more",
   
   },
 
@@ -48,7 +48,7 @@ const components: { title: string; href: string}[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <div className="grid grid-cols-1 bg-white   md:grid-cols-3 gap-[20rem] justify-center items-center mx-auto mx-[2rem] md:mx-[2rem]">
+    <div className="grid grid-cols-1 bg-white   md:grid-cols-3 gap-[20rem] justify-center items-center mx-h-[4rem] mx-auto mx-[2rem] md:mx-[2rem]">
         <div className="relative w-48 h-[8.4rem] ">
         <Image
           src="/mechanical/logo.jpg" // Path to your logo
@@ -107,26 +107,33 @@ export function NavigationMenuDemo() {
       </NavigationMenuList>
     </NavigationMenu>
         </div>
-       <div className="flex  md:flex-end">
-       <Link
-            href={"/meeting"}
-            className="
-  py-1
-  px-6
-  text-lg 
-  hover:bg-[#abcbff]
-  rounded-[6px]
-  border-2
-  border-orange
-  text-white
-  bg-orange-700
-  transition
-  duration-200
-     hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
-          >
-        +27 63 199 5124
-          </Link>
-       </div>
+        <div className="flex justify-end">
+  <Link
+    href="/meeting"
+    className="
+      py-2
+      px-6
+      text-lg
+      text-black
+      bg-yellow-400
+      rounded-lg
+      border-2
+      border-yellow-500
+      shadow-md
+      transition-transform
+      transform
+      hover:scale-105
+      hover:bg-yellow-500
+      hover:shadow-lg
+      focus:ring-2
+      focus:ring-yellow-300
+      focus:outline-none
+      duration-200
+    "
+  >
+   +27 68 815 1646
+  </Link>
+</div>
     
     </div>
   )

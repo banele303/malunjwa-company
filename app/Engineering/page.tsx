@@ -9,6 +9,7 @@ import { Zap, Cog, Shield, Users, CheckCircle, Wrench, Cpu, Lightbulb, Thermomet
 import Image from 'next/image'
 import Footer from '../components/footer'
 import { NavigationMenuDemo } from '../components/ul/Navbar'
+import ContactButtons from '../components/ul/contact-buttons'
 
 export default function EngineeringPage() {
   const [activeTab, setActiveTab] = useState("electrical")
@@ -17,6 +18,8 @@ export default function EngineeringPage() {
     <div className="flex flex-col min-h-screen">
       <NavigationMenuDemo />
       {/* Hero Section */}
+
+      <ContactButtons/>
       <section className="relative  text-white">
         <div className="absolute inset-0">
           <div className="relative w-full h-full">

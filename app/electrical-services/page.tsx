@@ -10,6 +10,7 @@ import Footer from '../components/footer'
 import FAQSection from '../about-us/ul/FAQSection'
 import ElectricHero from './electrical-hero'
 import BCallOut from '../components/bottom-call-out'
+import ContactButtons from '../components/ul/contact-buttons'
 
 
 
@@ -41,7 +42,7 @@ export default function Home() {
             <main className="min-h-screen bg-gray-50">
                 <ElectricHero />
 
-
+<ContactButtons/>
                 <ElectricalServices />
 
 
@@ -96,7 +97,7 @@ export default function Home() {
                 <FAQSection />
                 <BCallOut/>
                 <Footer />
-                <CallNow />
+               
             </main>
 
         </>

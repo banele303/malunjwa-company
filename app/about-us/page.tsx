@@ -11,6 +11,7 @@ import AboutHero from "./home-hero";
 import AboutVisionPage from "./about-vision";
 import CallNow from "./ul/call";
 import FAQSection from "./ul/FAQSection";
+import ContactButtons from "../components/ul/contact-buttons";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
  <AboutHero/>
     <AllservicesAbout/>
     <AboutVisionPage/>
-    <CallNow/>
+    <ContactButtons/>
     <FAQSection/>
     <Footer/>
    </div>

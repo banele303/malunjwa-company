@@ -9,6 +9,7 @@ import { NavigationMenuDemo } from "./components/ul/Navbar";
 import { HomeHeroTwo } from "./components/ul/home-hero";
 import CallNow from "./about-us/ul/call";
 import FAQSection from "./about-us/ul/FAQSection";
+import ContactButtons from "./components/ul/contact-buttons";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
     <AboutUS/>
     <Allservices/>
     <BCallOut/>
-    <CallNow/>
+    <ContactButtons/>
     <FAQSection/>
     <Footer/>
    </div>
